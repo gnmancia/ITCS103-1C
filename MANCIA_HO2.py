@@ -1,19 +1,19 @@
 import tkinter as tk
 
-root = tk.Tk()
-root.title("Gerald Noel's Profile")
-root.geometry("600x600")
-root.configure(bg="lightyellow")
+windows = tk.Tk()
+windows.title("Gerald Noel's Profile")
+windows.geometry("600x600")
+windows.configure(bg="lightyellow")
 
 title = tk.Label(
-    root,
+    windows,
     text="Student Profile",
     font=("Arial", 28, "bold"),
     bg="lightyellow"
 )
 title.pack(pady=20)
 
-frame = tk.Frame(root, bg="lightyellow")
+frame = tk.Frame(windows, bg="lightyellow")
 frame.pack(anchor="w", padx=40)
 
 details = [
@@ -49,4 +49,4 @@ tk.Label(
     justify="left"
 ).pack(anchor="w")
 
-root.mainloop()
+windows.mainloop()
